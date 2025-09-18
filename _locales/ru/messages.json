@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Nyan Scroll",
+    "description": "Название расширения для браузера."
+  },
+  "extensionDescription": {
+    "message": "Персонализируйте полосу прокрутки вашего браузера с забавной темой Nyan Cat.",
+    "description": "Описание расширения для браузера."
+  }
+}

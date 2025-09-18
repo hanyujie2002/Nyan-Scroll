@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Nyan Scroll",
+    "description": "O nome da extensão do navegador."
+  },
+  "extensionDescription": {
+    "message": "Personalize a barra de rolagem do seu navegador com um divertido tema do Nyan Cat.",
+    "description": "A descrição da extensão do navegador."
+  }
+}

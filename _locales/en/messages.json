@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Nyan Scroll",
+    "description": "The name of the browser extension."
+  },
+  "extensionDescription": {
+    "message": "Customize your browser's scrollbar with a fun Nyan Cat theme.",
+    "description": "The description of the browser extension."
+  }
+}

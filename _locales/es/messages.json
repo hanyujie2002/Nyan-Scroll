@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Nyan Scroll",
+    "description": "El nombre de la extensión del navegador."
+  },
+  "extensionDescription": {
+    "message": "Personaliza la barra de desplazamiento de tu navegador con un divertido tema de Nyan Cat.",
+    "description": "La descripción de la extensión del navegador."
+  }
+}

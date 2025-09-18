@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "彩虹猫滚动条",
+    "description": "浏览器扩展的名称。"
+  },
+  "extensionDescription": {
+    "message": "用可爱的彩虹猫主题，为你的浏览器滚动条增添色彩。",
+    "description": "浏览器扩展的描述。"
+  }
+}

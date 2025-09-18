@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "にゃんスクロール",
+    "description": "ブラウザ拡張機能の名前。"
+  },
+  "extensionDescription": {
+    "message": "かわいいNyan Catのテーマで、ブラウザのスクロールバーを楽しくカスタマイズ。",
+    "description": "ブラウザ拡張機能の説明。"
+  }
+}

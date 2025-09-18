@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Nyan 捲軸",
+    "description": "瀏覽器擴充功能的名稱。"
+  },
+  "extensionDescription": {
+    "message": "使用有趣的 Nyan Cat 主題自訂你的瀏覽器捲軸。",
+    "description": "瀏覽器擴充功能的描述。"
+  }
+}

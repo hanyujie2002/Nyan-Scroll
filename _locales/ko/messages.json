@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "냥 스크롤",
+    "description": "브라우저 확장 프로그램 이름입니다."
+  },
+  "extensionDescription": {
+    "message": "재미있는 냥캣 테마로 브라우저의 스크롤바를 꾸며보세요.",
+    "description": "브라우저 확장 프로그램에 대한 설명입니다."
+  }
+}
