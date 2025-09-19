@@ -20,6 +20,6 @@
 
 ### 关于彩虹猫（Nyan Cat）
 
-**Nyan Cat** 是一个在互联网上广为流传的文化迷因（Meme），最早由美国艺术家 Chris Torres 在 **2011 年**创作。它是一只身躯为樱桃馅饼、在宇宙中飞行的像素猫，身后拖着一道彩虹。
+**Nyan Cat** 是一个在互联网上广为流传的文化迷因（Meme），最早由美国艺术家 [Chris Torres](https://x.com/prguitarman) 在 **2011 年**创作。它是一只身躯为樱桃馅饼、在宇宙中飞行的像素猫，身后拖着一道彩虹。
 
 这个动图在与日本音乐家 daniwellP 的歌曲[《Nyanyanyanyanyanyanya!》](https://www.nicovideo.jp/watch/sm11509720)结合后，于同年 4 月[在 YouTube 上发布](https://www.youtube.com/watch?v=2yJgwwDcgV8)，迅速爆红。Nyan Cat 以其魔性的音乐和可爱的形象，成为了全球流行文化的重要符号之一。

@@ -20,6 +20,6 @@
 
 ### Nyan Catについて
 
-**Nyan Cat** は、2011年にアメリカのアーティスト、Chris Torresによって作成された、インターネット上で広く知られている文化的なミーム（Meme）です。これは、チェリーパイの胴体を持つピクセル化された猫が宇宙を飛び、後ろに虹の軌跡を残すものです。
+**Nyan Cat** は、2011年にアメリカのアーティスト、[Chris Torres](https://x.com/prguitarman)によって作成された、インターネット上で広く知られている文化的なミーム（Meme）です。これは、チェリーパイの胴体を持つピクセル化された猫が宇宙を飛び、後ろに虹の軌跡を残すものです。
 
 このGIFアニメは、日本のミュージシャン daniwellP の楽曲[「Nyanyanyanyanyanyanya! 」](https://www.nicovideo.jp/watch/sm11509720)と組み合わされ、同年4月に[YouTubeで公開されると](https://www.youtube.com/watch?v=2yJgwwDcgV8)瞬く間に大ヒットしました。その中毒性のある音楽と愛らしい姿から、Nyan Cat は世界のポップカルチャーにおいて重要なシンボルの一つとなっています。

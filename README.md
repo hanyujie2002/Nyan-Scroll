@@ -20,6 +20,6 @@ Note: The visual style of this extension is inspired by the [work of Olmo Kramer
 
 ### About Nyan Cat
 
-**Nyan Cat** is a widely spread internet meme, originally created by American artist Chris Torres in **2011**. It is a pixelated cat with a cherry pop-tart for a body, flying through space and leaving a rainbow trail behind.
+**Nyan Cat** is a widely spread internet meme, originally created by American artist [Chris Torres](https://x.com/prguitarman) in **2011**. It is a pixelated cat with a cherry pop-tart for a body, flying through space and leaving a rainbow trail behind.
 
 The animated GIF, when combined with the song [Nyanyanyanyanyanyanya!](https://www.nicovideo.jp/watch/sm11509720) by Japanese musician daniwellP, was uploaded to [YouTube in April of the same year](https://www.youtube.com/watch?v=2yJgwwDcgV8) and quickly went viral. With its catchy music and charming image, Nyan Cat has become an important symbol in global pop culture.
