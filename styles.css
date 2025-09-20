@@ -9,10 +9,16 @@
 :root::-webkit-scrollbar,
 :root::-webkit-scrollbar-corner,
 :root::-webkit-scrollbar-track,
-:root::-webkit-scrollbar-track-piece:horizontal:end,
-:root::-webkit-scrollbar-track-piece:vertical:end {
+:root::-webkit-scrollbar-track-piece:end {
 	background-image: var(--background) !important;
 	background-size: auto 60px !important;
+}
+
+:root::-webkit-scrollbar:vertical,
+:root::-webkit-scrollbar-track:vertical,
+:root::-webkit-scrollbar-track-piece:vertical:end {
+	transform: rotate(90deg);
+	transform-origin: center !important;
 }
 
 :root::-webkit-scrollbar,
