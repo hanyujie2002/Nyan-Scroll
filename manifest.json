@@ -15,5 +15,11 @@
       "css": ["styles.css"],
       "run_at": "document_start"
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.png", "images/*.svg"],
+      "matches": ["<all_urls>"]
+    }
   ]
 }
