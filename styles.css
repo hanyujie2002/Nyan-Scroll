@@ -1,9 +1,9 @@
 :root {
-	--background: url('chrome-extension://__MSG_@@extension_id__/images/background.png');
-	--nyan-hor: url('chrome-extension://__MSG_@@extension_id__/images/nyan-hor.svg');
-	--nyan-vert: url('chrome-extension://__MSG_@@extension_id__/images/nyan-vert.svg');
-	--rainbow-hor: url('chrome-extension://__MSG_@@extension_id__/images/rainbow-hor.svg');
-	--rainbow-vert: url('chrome-extension://__MSG_@@extension_id__/images/rainbow-vert.svg');
+	--background: url('chrome-extension://__MSG_@@extension_id__/images/nyan/background.png');
+	--nyan-hor: url('chrome-extension://__MSG_@@extension_id__/images/nyan/nyan-hor.svg');
+	--nyan-vert: url('chrome-extension://__MSG_@@extension_id__/images/nyan/nyan-vert.svg');
+	--rainbow-hor: url('chrome-extension://__MSG_@@extension_id__/images/nyan/rainbow-hor.svg');
+	--rainbow-vert: url('chrome-extension://__MSG_@@extension_id__/images/nyan/rainbow-vert.svg');
 }
 
 :root::-webkit-scrollbar,
@@ -43,6 +43,7 @@
 	background-position: bottom right, top left !important;
 	background-size: auto 100% !important;
 	background-repeat: no-repeat, repeat !important;
+	min-width: 27px !important;
 }
 
 :root::-webkit-scrollbar-track-piece:vertical:start {
@@ -60,6 +61,7 @@
 	background-position: bottom right, top right !important;
 	background-size: 100% auto !important;
 	background-repeat: no-repeat, repeat !important;
+	min-height: 27px !important;
 }
 
 :root::-webkit-scrollbar-thumb {
