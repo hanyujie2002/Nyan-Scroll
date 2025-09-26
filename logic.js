@@ -1,39 +1,55 @@
-function setOptimalRainbowSize() {
+function setOptimalSize() {
   try {
-		const vertScrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-		const horizScrollbarHeight = window.innerHeight - document.documentElement.clientHeight;
-		const scrollbarSize = Math.max(vertScrollbarWidth, horizScrollbarHeight);
-
-    console.debug(`Detected scrollbar size: ${scrollbarSize}`);
-    let baseSize;
-
-		if (scrollbarSize > 0) {
-			baseSize = scrollbarSize * (20 / 22);
-		} else {
-			baseSize = 15;
-		}
-
-    console.debug(`baseSize: ${baseSize}`);
-
     const dpr = window.devicePixelRatio || 1;
 
-    const N = Math.floor((baseSize * dpr) / 2);
+		const scrollbarSize = originalScrollbarSizeTimesDpr / dpr;
 
-    const newSize = ((N + 0.75) * 2) / dpr;
+    console.debug(`Detected scrollbar size: ${scrollbarSize}`);
+    let baseRainbowSize;
+    let newBackgroundSize;
 
-    console.debug(`newSize: ${newSize}`);
+		if (scrollbarSize > 0) {
+			baseRainbowSize = scrollbarSize * (20 / 22);
+		} else {
+			baseRainbowSize = 16;
+		}
 
-    console.debug(`newSize * dpr: ${newSize * dpr}`);
+    newBackgroundSize = scrollbarSize * 4;
+
+    console.debug(`baseRainbowSize: ${baseRainbowSize}`);
+
+    const N = Math.floor((baseRainbowSize * dpr) / 2);
+
+    const newRainbowSize = ((N + 0.75) * 2) / dpr;
+
+    console.debug(`newRainbowSize: ${newRainbowSize}`);
+
+    console.debug(`newRainbowSize * dpr: ${newRainbowSize * dpr}`);
 
     document.documentElement.style.setProperty(
       '--rainbow-size',
-      `${newSize}px`
+      `${newRainbowSize}px`
     );
+
+    document.documentElement.style.setProperty(
+      '--scrollbar-size',
+      `${scrollbarSize}px`
+    );
+
+    document.documentElement.style.setProperty(
+      '--background-size',
+      `${newBackgroundSize}px`
+    );
+
+    console.debug(`--background-size set to ${newBackgroundSize}`)
+
   } catch (error) {
     console.error('Nyan Cat Scrollbar: Failed to set optimal size.', error);
   }
 }
 
-setOptimalRainbowSize();
+const originalScrollbarSizeTimesDpr = 16 * (window.devicePixelRatio || 1);
 
-window.addEventListener('resize', setOptimalRainbowSize);
+setOptimalSize();
+
+window.addEventListener('resize', setOptimalSize);
