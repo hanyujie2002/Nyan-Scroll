@@ -1,55 +1,54 @@
+let originalScrollbarSizeTimesDpr;
+
 function setOptimalSize() {
   try {
     const dpr = window.devicePixelRatio || 1;
+    const scrollbarSize = originalScrollbarSizeTimesDpr / dpr;
 
-		const scrollbarSize = originalScrollbarSizeTimesDpr / dpr;
-
-    console.debug(`Detected scrollbar size: ${scrollbarSize}`);
+    console.debug(`Applying scrollbar size: ${scrollbarSize}px`);
     let baseRainbowSize;
     let newBackgroundSize;
 
-		if (scrollbarSize > 0) {
-			baseRainbowSize = scrollbarSize * (20 / 22);
-		} else {
-			baseRainbowSize = 16;
-		}
+    if (scrollbarSize > 0) {
+      baseRainbowSize = scrollbarSize * (20 / 22);
+    } else {
+      baseRainbowSize = 16;
+    }
 
     newBackgroundSize = scrollbarSize * 4;
 
-    console.debug(`baseRainbowSize: ${baseRainbowSize}`);
-
     const N = Math.floor((baseRainbowSize * dpr) / 2);
-
     const newRainbowSize = ((N + 0.75) * 2) / dpr;
 
-    console.debug(`newRainbowSize: ${newRainbowSize}`);
+    document.documentElement.style.setProperty('--rainbow-size', `${newRainbowSize}px`);
+    document.documentElement.style.setProperty('--scrollbar-size', `${scrollbarSize}px`);
+    document.documentElement.style.setProperty('--background-size', `${newBackgroundSize}px`);
 
-    console.debug(`newRainbowSize * dpr: ${newRainbowSize * dpr}`);
-
-    document.documentElement.style.setProperty(
-      '--rainbow-size',
-      `${newRainbowSize}px`
-    );
-
-    document.documentElement.style.setProperty(
-      '--scrollbar-size',
-      `${scrollbarSize}px`
-    );
-
-    document.documentElement.style.setProperty(
-      '--background-size',
-      `${newBackgroundSize}px`
-    );
-
-    console.debug(`--background-size set to ${newBackgroundSize}`)
+    console.debug(`--scrollbar-size set to ${scrollbarSize}`);
+    console.debug(`--background-size set to ${newBackgroundSize}`);
 
   } catch (error) {
     console.error('Nyan Cat Scrollbar: Failed to set optimal size.', error);
   }
 }
 
-const originalScrollbarSizeTimesDpr = 16 * (window.devicePixelRatio || 1);
+// Initial load of the scrollbar size
+chrome.storage.local.get('scrollbarSize', (data) => {
+  const size = data.scrollbarSize || 16; // Default size is 16px
 
-setOptimalSize();
+  originalScrollbarSizeTimesDpr = size * (window.devicePixelRatio || 1);
+  console.log(`Loaded scrollbar size from storage: ${originalScrollbarSizeTimesDpr}px`);
+  setOptimalSize();
+});
 
-window.addEventListener('resize', setOptimalSize);
+// Listen for changes in storage (e.g., from the popup)
+// chrome.storage.onChanged.addListener((changes, namespace) => {
+//   if (namespace === 'local' && changes.scrollbarSize) {
+//     const newSize = changes.scrollbarSize.newValue;
+//     setOptimalSize(newSize);
+//   }
+// });
+
+window.addEventListener('resize', () => {
+  setOptimalSize();
+});

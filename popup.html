@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nyan Cat Scrollbar Settings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 250px;
+      padding: 10px;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+    #refreshMessage { /* Style for the new message */
+      color: lightslategray; /* A noticeable color like a warning/action color */
+      font-size: 0.9em;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h3>Nyan Cat Scrollbar</h3>
+  <label for="scrollbarSize">Size: <span id="sizeValue">16</span>px</label>
+  <input type="range" id="scrollbarSize" min="10" max="40" step="1">
+  
+  <p id="refreshMessage">
+    Please refresh the page to apply the new size.
+  </p>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
